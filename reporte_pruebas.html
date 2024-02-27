@@ -243,7 +243,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>reporte_pruebas.html</h1>
-    <p>Report generated on 26-Feb-2024 at 21:14:18 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
+    <p>Report generated on 26-Feb-2024 at 21:25:28 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.1.1</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -262,7 +262,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td>Python</td>
         <td>3.9.6</td></tr></table>
     <h2>Summary</h2>
-    <p>2 tests ran in 7.06 seconds. </p>
+    <p>2 tests ran in 6.87 seconds. </p>
     <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">2 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
@@ -278,17 +278,25 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_send_message.py::test_send_message_web_success</td>
-          <td class="col-duration">3.74</td>
+          <td class="col-duration">3.61</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
+            <div class="log"> -----------------------------Captured stderr setup------------------------------ <br/><span class="ansi1 ansi37">26.02.2024 21:25:22</span> 🎉 <span class="ansi1 ansi32">Launch browser</span>
+<br/> -------------------------------Captured log setup------------------------------- <br/><span class="ansi32">INFO    </span> utils.logs:conftest.py:10 Launch browser<br/> ------------------------------Captured stderr call------------------------------ <br/><span class="ansi1 ansi37">26.02.2024 21:25:22</span> 🎉 <span class="ansi1 ansi32">Send message to web</span>
+<span class="ansi1 ansi37">26.02.2024 21:25:25</span> 🎉 <span class="ansi1 ansi32">Validate message successfully</span>
+<br/> -------------------------------Captured log call-------------------------------- <br/><span class="ansi32">INFO    </span> utils.logs:test_send_message.py:8 Send message to web
+<span class="ansi32">INFO    </span> utils.logs:test_send_message.py:18 Validate message successfully<br/></div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">tests/test_send_message.py::test_send_message_web_error</td>
-          <td class="col-duration">3.29</td>
+          <td class="col-duration">3.22</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>
+            <div class="log"> -----------------------------Captured stderr setup------------------------------ <br/><span class="ansi1 ansi37">26.02.2024 21:25:25</span> 🎉 <span class="ansi1 ansi32">Launch browser</span>
+<br/> -------------------------------Captured log setup------------------------------- <br/><span class="ansi32">INFO    </span> utils.logs:conftest.py:10 Launch browser<br/> ------------------------------Captured stderr call------------------------------ <br/><span class="ansi1 ansi37">26.02.2024 21:25:26</span> 🎉 <span class="ansi1 ansi32">Send message to web</span>
+<span class="ansi1 ansi37">26.02.2024 21:25:28</span> 🎉 <span class="ansi1 ansi32">Validate message unsuccessfully</span>
+<br/> -------------------------------Captured log call-------------------------------- <br/><span class="ansi32">INFO    </span> utils.logs:test_send_message.py:25 Send message to web
+<span class="ansi32">INFO    </span> utils.logs:test_send_message.py:35 Validate message unsuccessfully<br/></div></td></tr></tbody></table></body></html>

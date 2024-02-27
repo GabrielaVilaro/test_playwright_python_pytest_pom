@@ -43,3 +43,5 @@ class HomePage(BasePage):
         Método para navegar a la URL de la página de inicio.
         """
         self.page.goto(self.URL)
+        self.page.set_viewport_size({'width': 1920, 'height': 1080})
+
