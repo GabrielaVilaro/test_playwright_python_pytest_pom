@@ -1,0 +1,30 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N806" />
+          <option value="N802" />
+          <option value="N803" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="initialize.SFTP_PASS_NEU" />
+          <option value="initialize.SFTP_USER_NAME" />
+          <option value="initialize.SFTP_HOST_NEU" />
+          <option value="initialize.SFTP_USER_NEU" />
+          <option value="initialize.S3_PATH_CUSTOMER" />
+          <option value="initialize.BUCKET_NAME_CUSTOMER" />
+          <option value="initialize.BUCKET_NAME_OB_NEU" />
+          <option value="initialize.SFTP_HOST" />
+          <option value="initialize.SFTP_PASS" />
+          <option value="initialize.SFTP_USER" />
+        </list>
+      </option>
+    </inspection_tool>
+  </profile>
+</component>

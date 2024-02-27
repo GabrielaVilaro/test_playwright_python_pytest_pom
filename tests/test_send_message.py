@@ -1,0 +1,32 @@
+from pages.home_page import HomePage
+
+
+def test_send_message_web_success(browser):
+    """Este test valida el mensaje de envío exitoso al completar los campos de forma correcta"""
+
+    with browser as b:
+        page = b.new_page()
+        home_page = HomePage(page)
+        home_page.send_message(name="Juan Perez",
+                               email="test@test.com",
+                               phone="12345678901",
+                               subject="Prueba de caracteres",
+                               message="Prueba de caracteres, probando que happy path con 20 caracteres mínimo")
+
+        assert home_page.get_text() == "We'll get back to you about"
+
+
+def test_send_message_web_error(browser):
+    """Este test valida el mensaje de error al no cumplir con el número de caracteres de los input"""
+
+    with browser as b:
+        page = b.new_page()
+        home_page = HomePage(page)
+        home_page.send_message(name="Juan Perez",
+                               email="test@test.com",
+                               phone="12345",
+                               subject="QA",
+                               message="Prueba de caracteres")
+
+        assert home_page.get_text_error_subject() == "Subject must be between 5 and 100 characters."
+        assert home_page.get_text_error_phone() == "Phone must be between 11 and 21 characters."
